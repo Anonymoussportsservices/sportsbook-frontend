@@ -75,9 +75,15 @@ return ( <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto"> <
 
 ---
 
-// src/pages/index.tsx import Layout from '../components/Layout'; import OddsBoard from '../components/OddsBoard';
+// src/pages/index.tsx import '../styles/globals.css'
 
-export default function Home() { return ( <Layout> <h1 className="text-xl font-bold mb-4">Sportsbook Home</h1> <OddsBoard /> </Layout> ); }
+export default function Home() {
+  return (
+    <div className="min-h-screen flex items-center justify-center text-2xl">
+      Sportsbook Home
+    </div>
+  )
+}
 
 
 ---
